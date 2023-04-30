@@ -36,6 +36,9 @@
   .sidebar {
     display: block;
     height: 20vh;
+    position: absolute;
+    left: 2%;
+    top: 2%;
   }
 }
 .offcanvas-header {
@@ -73,6 +76,7 @@
   justify-content: center;
   color: #fff;
   padding: 15px;
+  position: relative;
 }
 .hp-header-con {
   padding: 100px;
