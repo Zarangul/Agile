@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  border-bottom: 1px solid silver;
+}
+.logo {
+  width: 100px;
+}
+.nav-list li a {
+  color: #2c3e50;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+.nav-list li a:hover {
+  color: #95a5a6;
+}
+
+.nav-list li:last-child a {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+.sidebar {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .nav {
+    display: none !important;
+  }
+  .sidebar {
+    display: block;
+    height: 20vh;
+  }
+}
+.offcanvas-header {
+  width: 100%;
+}
+.offcanvas-body .navbar-nav .nav-item .nav-link{
+  font-size: 22px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s;
+}
+.offcanvas-body .navbar-nav .nav-item .nav-link:hover{
+  color: #2c3e50;
+  transition: all 0.3s;
+}
+.hp-toggle-nav-btn {
+  background-color: black !important;
+  border-radius: 50% !important;
+  width: 50px;
+  height: 50px;
+}
+
+.hp-cn-side {
+  width: 320px !important;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/image/header-home_2x.jpg);
+  background: #141414 url(/assets/image/header-home.jpg) no-repeat 50% 100%;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 15px;
+}
+.hp-header-con {
+  padding: 100px;
+  justify-content: flex-start !important;
+}
+.hp-header-con h1 {
+  font-size: 62px;
+  font-family: "Raleway", sans-serif;
+  
+}
+.hp-header-con p {
+  max-width: 600px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+  margin: 30px 0 50px;
+}
+@media (max-width: 992px) {
+  .hp-header-con {
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hp-header-con h1,
+  .hp-header-con p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .hp-header-con h1 strong,
+  .hp-header-con p strong {
+    margin: 0 10px;
+  }
+  .hp-header-con h1 {
+    font-size: 50px;
+  }
+  .hp-header-con p {
+    text-align: center;
+    max-width: 500px;
+  }
+}
+.hp-section-about-us {
+  min-height: 90vh;
+}
+.hp-about-us a {
+  color: #2c3e50;
+  font-size: 62px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.hp-about-us a:hover {
+  color: #4a6580;
+  transition: all 0.3s;
+}
+.hp-about-us-content {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 600px;
+  margin: 40px 0;
+  text-align: center;
+  color: #2c3e50;
+}
+.hp-about-us-r-btn {
+  max-width: 600px;
+}
+.hp-about-us-r-btn a {
+  color: #fff;
+  background-color: #ff0000;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 25px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.hp-about-us-r-btn a:hover {
+  background-color: #e10000;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.hp-section-services {
+  background-color: #e2fff9;
+  padding: 80px 0 100px;
+}
+.hp-services-header {
+  min-height: 32vh !important;
+}
+.hp-services-header h2 a {
+  color: #2c3e50;
+  font-size: 42px;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s;
+}
+.hp-services-header h2 a:hover {
+  color: #4a6580;
+  transition: all 0.3s;
+}
+.hp-services-header div {
+  max-width: 600px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 25px;
+}
+.hp-service-card {
+  width: 360px;
+  height: 650px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+.hp-service-c-h {
+  margin: 10px 0 20px;
+}
+.hp-service-c-h a {
+  color: #ff0000;
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s;
+}
+.hp-service-c-con {
+  padding: 0 15px !important;
+  margin: 20px 0;
+}
+.hp-service-c-h a:hover {
+  color: #4a6580;
+  transition: all 0.3s;
+}
+.hp-service-c-con {
+  color: #2c3e50;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 28px;
+}
+.hp-tech-header h2 {
+  font-size: 42px;
+  font-family: "Raleway", sans-serif;
+  color: #141414;
+}
+.hp-section-technologies {
+  padding: 80px 0 100px;
+}
+.hp-tech-header {
+  min-height: 32vh !important;
+}
+.hp-tech-header div {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #141414;
+  margin-top: 25px;
+  max-width: 790px;
+  text-align: center;
+}
+.hp-tech-card {
+  width: 260px;
+  height: 160px;
+  background-color: #ecf0f1;
+  color: #333333;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
